@@ -8,15 +8,6 @@
 
 import Foundation
 
-func changeSign(value: Double) -> Double {
-    return -value
-}
-
-// ISSO:
-func multiply(_ leftOperand: Double, _ rightOperand: Double) -> Double {
-    return leftOperand * rightOperand
-}
-
 struct CalculatorBrain {
     
     private var accumulator: Double?
@@ -34,7 +25,7 @@ struct CalculatorBrain {
         "√": Operation.unaryOperation(sqrt),
         "cos": Operation.unaryOperation(cos),
         "±": Operation.unaryOperation({ -$0 }),
-        "×": Operation.binaryOperation({ $0 * $1 }), // IGUAL A ISSO {(op1, op2) in op1 * op2}
+        "×": Operation.binaryOperation({ $0 * $1 }), // IGUAL A ISSO {(op1, op2) in op1 * op2} que é igual: func multiply(op1: Double, op2: Double) -> Double { return op1 * op2 }
         "÷": Operation.binaryOperation({ $0 / $1 }),
         "+": Operation.binaryOperation({ $0 + $1 }),
         "-": Operation.binaryOperation({ $0 - $1 }),

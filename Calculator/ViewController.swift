@@ -48,5 +48,11 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func decimalPointPressed(_ sender: UIButton) {
+        if !(display.text?.contains("."))! {
+            display.text = display.text! + "."
+        }
+    }
+    
 }
 

@@ -253,7 +253,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="operationWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bw2-Mn-O6I"/>
+                                                            <action selector="decimalPointPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JKd-Um-eA9"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lah-9x-IKh">
